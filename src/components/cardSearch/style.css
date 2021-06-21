@@ -1,0 +1,5 @@
+.card-container-displayarea{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+}
