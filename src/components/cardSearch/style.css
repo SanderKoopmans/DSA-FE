@@ -1,5 +1,33 @@
 .card-container-displayarea{
     display: flex;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     background-color: grey;
+    flex-grow: 1;
+}
+
+.card-container-displayarea > div {
+    margin: 0 5px;
+}
+
+.card-container-displayarea:nth-last-child() {
+    margin-right: auto;
+}
+
+.card-container {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: grey;
+}
+
+.card-container-searchbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 250px;
+    border-radius: 5px;
 }

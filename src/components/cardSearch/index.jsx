@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Input } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 
 import Card from '../card';
 import './style.css';
@@ -18,13 +19,12 @@ class CardSearch extends Component {
     }
 
     render() {
-        // console.info(this.props.cards.length);
-        // console.log('CardSearch', this.props, !this.state.search);
         const displayedCards = this.props.cards.filter(card => !this.state.search || card.title.startsWith(this.state.search));
 
         return (
             <div className="card-container">
                 <div className="card-container-searchbar">
+                    <SearchOutlined style={{ color: 'grey', padding: '0 5px' }} />
                     <Input placeholder="Filter Cards" onChange={this.searchChange} />
                 </div>
                 <div className="card-container-displayarea" >
